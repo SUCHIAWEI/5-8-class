@@ -22,7 +22,6 @@ public class FrameOX extends JFrame{
         this.setBounds(100,100,525,525);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
-
         cp=this.getContentPane();
         cp.setLayout(new BorderLayout(3,3));
         cp.add(jp1,BorderLayout.CENTER);
@@ -30,7 +29,6 @@ public class FrameOX extends JFrame{
         jp2.add(b1);
         jp2.add(b2);
         jp2.add(exit);
-
         for (int i = 0 ; i<3 ; i++){
             for (int j = 0 ; j<3 ; j++){
                 bs[i][j] = new JButton();
@@ -45,10 +43,10 @@ public class FrameOX extends JFrame{
                         tmp.setBackground(new Color(65, 255, 113));
                         if (tmp.getText().equals("")){
                             if (flag){
-                                tmp.setText("o");
+                                tmp.setText("O");
                             }
                             else {
-                                tmp.setText("x");
+                                tmp.setText("X");
                             }
                             flag=!flag;
                         }
